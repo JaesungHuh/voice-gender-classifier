@@ -47,6 +47,6 @@ I used the pretrained ECAPA-TDNN from [TaoRuijie's](https://github.com/TaoRuijie
 The model achieved **98.7%** accuracy on the VoxCeleb1 identification test split.
 
 ## Reference
-- 🤗 [Huggingface Hub link](https://huggingface.co/JaesungHuh/)
+- 🤗 [Huggingface Hub link](https://huggingface.co/JaesungHuh/ecapa-gender)
 - I modified the model architecture from [TaoRuijie's](https://github.com/TaoRuijie/ECAPA-TDNN) repository.
 - For more details about ECAPA-TDNN, check the [paper](https://arxiv.org/abs/2005.07143).
