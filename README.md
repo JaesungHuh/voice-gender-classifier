@@ -37,7 +37,7 @@ with torch.no_grad():
 ```
 
 ## Pretrained weights
-For those who need pretrained weights, please download it in [here](https://drive.google.com/file/d/1ojtaa6VyUhEM49F7uEyvsLSVN3T8bbPI/view?usp=sharing)
+For those who need pretrained weights, please download them in [here](https://drive.google.com/file/d/1ojtaa6VyUhEM49F7uEyvsLSVN3T8bbPI/view?usp=sharing)
 
 ## Training details
 State-of-the-art speaker verification model already produces good representation of the speaker's gender.
