@@ -37,7 +37,7 @@ with torch.no_grad():
 ```
 
 ## Pretrained weights
-For those who need a pretrained weight, please download it in [here](https://drive.google.com/file/d/1ojtaa6VyUhEM49F7uEyvsLSVN3T8bbPI/view?usp=sharing)
+For those who need pretrained weights, please download it in [here](https://drive.google.com/file/d/1ojtaa6VyUhEM49F7uEyvsLSVN3T8bbPI/view?usp=sharing)
 
 ## Training details
 State-of-the-art speaker verification model already produces good representation of the speaker's gender.
@@ -47,5 +47,6 @@ I used the pretrained ECAPA-TDNN from [TaoRuijie's](https://github.com/TaoRuijie
 The model achieved **98.7%** accuracy on the VoxCeleb1 identification test split.
 
 ## Reference
+- 🤗 [Huggingface Hub link](https://huggingface.co/JaesungHuh/)
 - I modified the model architecture from [TaoRuijie's](https://github.com/TaoRuijie/ECAPA-TDNN) repository.
 - For more details about ECAPA-TDNN, check the [paper](https://arxiv.org/abs/2005.07143).
