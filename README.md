@@ -47,7 +47,7 @@ I used the pretrained ECAPA-TDNN from [TaoRuijie's](https://github.com/TaoRuijie
 The model achieved **98.7%** accuracy on the VoxCeleb1 identification test split.
 
 ## Caveat
-We would like to note the training dataset I've used for this model (VoxCeleb) may not represent the global human population. Please be careful of unintended biases when using this model.
+I would like to note the training dataset I've used for this model (VoxCeleb) may not represent the global human population. Please be careful of unintended biases when using this model.
 
 ## Reference
 - 🤗 [Huggingface Hub link](https://huggingface.co/JaesungHuh/ecapa-gender)
