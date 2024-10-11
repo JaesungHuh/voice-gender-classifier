@@ -3,7 +3,6 @@
 [![Static Badge](https://img.shields.io/badge/%F0%9F%A4%97%20Spaces-Demo-blue)](https://huggingface.co/spaces/JaesungHuh/voice-gender-classifier)
 
 - This repo contains the inference code to use pretrained human voice gender classifier.
-- You could also try 🤗[Huggingface online demo](https://huggingface.co/spaces/JaesungHuh/voice-gender-classifier).
 
 ## Installation
 First, clone this repository
