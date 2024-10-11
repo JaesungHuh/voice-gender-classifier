@@ -1,4 +1,7 @@
 # Voice gender classifier 
+[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fmodels%2FJaesungHuh%2Fecapa-gender%3Fexpand%255B%255D%3Ddownloads%26expand%255B%255D%3DdownloadsAllTime&query=%24.downloadsAllTime&label=%F0%9F%A4%97%20Downloads)](https://huggingface.co/JaesungHuh/ecapa-gender)
+[![Static Badge](https://img.shields.io/badge/%F0%9F%A4%97%20Spaces-Demo-blue)](https://huggingface.co/spaces/JaesungHuh/voice-gender-classifier)
+
 - This repo contains the inference code to use pretrained human voice gender classifier.
 - You could also try 🤗[Huggingface online demo](https://huggingface.co/spaces/JaesungHuh/voice-gender-classifier).
 
