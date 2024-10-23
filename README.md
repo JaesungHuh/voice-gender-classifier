@@ -1,5 +1,5 @@
 # Voice gender classifier 
-[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fmodels%2FJaesungHuh%2Fecapa-gender%3Fexpand%255B%255D%3Ddownloads%26expand%255B%255D%3DdownloadsAllTime&query=%24.downloadsAllTime&label=%F0%9F%A4%97%20Downloads)](https://huggingface.co/JaesungHuh/ecapa-gender)
+[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fmodels%2FJaesungHuh%2Fvoice-gender-classifier%3Fexpand%255B%255D%3Ddownloads%26expand%255B%255D%3DdownloadsAllTime&query=%24.downloadsAllTime&label=%F0%9F%A4%97%20Downloads)](https://huggingface.co/JaesungHuh/voice-gender-classifier)
 [![Static Badge](https://img.shields.io/badge/%F0%9F%A4%97%20Spaces-Demo-blue)](https://huggingface.co/spaces/JaesungHuh/voice-gender-classifier)
 
 - This repo contains the inference code to use pretrained human voice gender classifier.
@@ -52,6 +52,6 @@ The model achieved **98.7%** accuracy on the VoxCeleb1 identification test split
 I would like to note the training dataset I've used for this model (VoxCeleb) may not represent the global human population. Please be careful of unintended biases when using this model.
 
 ## Reference
-- 🤗 [Huggingface Hub link](https://huggingface.co/JaesungHuh/ecapa-gender)
+- 🤗 [Huggingface Hub link](https://huggingface.co/JaesungHuh/voice-gender-classifier)
 - I modified the model architecture from [TaoRuijie's](https://github.com/TaoRuijie/ECAPA-TDNN) repository.
 - For more details about ECAPA-TDNN, check the [paper](https://arxiv.org/abs/2005.07143).
