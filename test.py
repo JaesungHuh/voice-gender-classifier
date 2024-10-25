@@ -3,7 +3,7 @@ import torch
 from model import ECAPA_gender
 
 # You could directly download the model from the huggingface model hub
-model = ECAPA_gender.from_pretrained("JaesungHuh/ecapa-gender")
+model = ECAPA_gender.from_pretrained("JaesungHuh/voice-gender-classifier")
 model.eval()
 
 # If you are using gpu or not.
