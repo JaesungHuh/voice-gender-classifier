@@ -39,19 +39,19 @@ with torch.no_grad():
 ```
 
 ## Pretrained weights
-For those who need pretrained weights, please download them in [here](https://drive.google.com/file/d/1ojtaa6VyUhEM49F7uEyvsLSVN3T8bbPI/view?usp=sharing)
+For those who need pretrained weights, please download them [here](https://drive.google.com/file/d/1ojtaa6VyUhEM49F7uEyvsLSVN3T8bbPI/view?usp=sharing).
 
 ## Training details
 State-of-the-art speaker verification model already produces good representation of the speaker's gender.
 
-I used the pretrained ECAPA-TDNN from [TaoRuijie's](https://github.com/TaoRuijie/ECAPA-TDNN) repository, added one linear layer to make two-class classifier, and finetuned the model with the VoxCeleb2 dev set.
+I used the pretrained ECAPA-TDNN from [TaoRuijie's](https://github.com/TaoRuijie/ECAPA-TDNN) repository, added one linear layer to make a two-class classifier, and finetuned the model with the VoxCeleb2 dev set.
 
 The model achieved **98.7%** accuracy on the VoxCeleb1 identification test split.
 
 ## Caveat
-I would like to note the training dataset I've used for this model (VoxCeleb) may not represent the global human population. Please be careful of unintended biases when using this model.
+I would like to note that the training dataset I've used for this model (VoxCeleb) may not represent the global human population. Please be careful of unintended biases when using this model.
 
-## Reference
+## References
 - 🤗 [Huggingface Hub link](https://huggingface.co/JaesungHuh/voice-gender-classifier)
 - I modified the model architecture from [TaoRuijie's](https://github.com/TaoRuijie/ECAPA-TDNN) repository.
 - For more details about ECAPA-TDNN, check the [paper](https://arxiv.org/abs/2005.07143).
