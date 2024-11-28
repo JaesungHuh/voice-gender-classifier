@@ -109,14 +109,14 @@ class ECAPA_gender(nn.Module, PyTorchModelHubMixin):
 
     def logtorchfbank(self, x : torch.Tensor) -> torch.Tensor:
         # Preemphasis
-        flipped_filter = torch.FloatTensor([-0.97, 1.]).unsqueeze(0).unsqueeze(0)
+        flipped_filter = torch.FloatTensor([-0.97, 1.]).unsqueeze(0).unsqueeze(0).to(x.device)
         x = x.unsqueeze(1)
         x = F.pad(x, (1, 0), 'reflect')
         x = F.conv1d(x, flipped_filter).squeeze(1)
 
         # Melspectrogram
         x = torchaudio.transforms.MelSpectrogram(sample_rate=16000, n_fft=512, win_length=400, hop_length=160, \
-                                                 f_min = 20, f_max = 7600, window_fn=torch.hamming_window, n_mels=80)(x) + 1e-6
+                                                 f_min = 20, f_max = 7600, window_fn=torch.hamming_window, n_mels=80).to(x.device)(x) + 1e-6
         
         # Log and normalize
         x = x.log()   
