@@ -9,7 +9,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 import torchaudio
-from torchaudio.functional import resample
+from torchaudio.transforms import Resample
+
 
 from huggingface_hub import PyTorchModelHubMixin
 
@@ -154,12 +155,13 @@ class ECAPA_gender(nn.Module, PyTorchModelHubMixin):
         x = self.fc7(x)
         
         return x
-    
-    def load_audio(self, path : str) -> torch.Tensor:
+
+    def load_audio(self, path: str) -> torch.Tensor:
         audio, sr = torchaudio.load(path)
         if sr != 16000:
-            audio = resample(audio, sr, 16000)
-        return audio
+            resampler = Resample(orig_freq=sr, new_freq=16000)
+            audio = resampler(audio)
+        return audio.mean(dim=0, keepdim=True)  # Convert to mono if stereo
     
     def predict(self, audio : torch.Tensor, device: torch.device) -> torch.Tensor:
         audio = self.load_audio(audio)
